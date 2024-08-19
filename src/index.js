@@ -45,9 +45,9 @@ module.exports = function toReadable (number) {
       }
     case 3:
       if (!(number % 100)) {
-        return toReadable(number / 100) + ' hundred '
+        return toReadable(number / 100) + ' hundred'
       } else {
-        return toReadable(number - number % 100) + toReadable(number % 100)  
+        return toReadable(number - number % 100) + ' ' + toReadable(number % 100)  
       }
   }
 }
